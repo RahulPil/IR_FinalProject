@@ -1,0 +1,10 @@
+streamlit
+pyyaml
+python-dotenv
+openai
+sentence-transformers
+tqdm
+pandas
+datasets
+rank-bm25
+nltk

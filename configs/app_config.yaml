@@ -1,0 +1,31 @@
+paths:
+  corpus_raw_dir: "data/raw"
+  corpus_processed_path: "data/processed/wiki_subset.jsonl"
+  index_dir: "indexes/wiki_bm25"
+
+retrieval:
+  bm25_top_k: 20
+
+expansion:
+  provider: "openai"
+  model: "gpt-4.1-mini" 
+
+  pool_size_paraphrase: 6
+  pool_size_entity: 6
+  pool_size_conceptual: 6
+
+  max_paraphrase: 2
+  max_entity: 2
+  max_conceptual: 2
+
+  temperature: 0.7
+
+
+filtering:
+  min_cos_sim: 0.4
+  max_cos_sim: 0.98
+  min_token_overlap: 0.1
+  embedding_model: "all-MiniLM-L6-v2"
+
+retrieval:
+  bm25_top_k: 50
