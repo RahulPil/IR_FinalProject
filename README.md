@@ -130,10 +130,11 @@ This script:
 Launch the interactive retrieval interface.
 
 ```bash
-streamlit run app.py
+streamlit run src/ui/app.py
 ```
 
 The Streamlit app allows users to enter custom queries and compare BM25 results against expansion-augmented retrieval.
 
 ---
+
 
